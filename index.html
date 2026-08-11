@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Discovery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: '#81e5ee',
+                        'accent-cold': '#c1dfe2',
+                        'bg-dark': '#0a0b0c',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#0a0b0c] text-[#e0e0e0] font-sans bg-[radial-gradient(circle_at_50%_-20%,#1a1c1e_0%,#0a0b0c_80%)] min-h-screen m-0">
+
+    <section class="relative h-screen min-h-[600px] bg-[url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center flex items-center text-white mb-[60px]">
+        <div class="absolute inset-0 z-[1] bg-[linear-gradient(to_bottom,rgba(10,11,12,0.2)_0%,rgb(10,11,12)_100%),linear-gradient(to_right,rgba(10,11,12,0.8)_0%,rgba(10,11,12,0)_60%)]"></div>
+        <div class="w-full px-4">
+            <div class="relative z-[2] max-w-[800px] pl-[8%]">
+                <span class="text-[0.85rem] tracking-[6px] uppercase text-[#81e5ee] font-semibold mb-4 block">Earth's Greatest Heights</span>
+                <h1 class="font-serif text-[clamp(2.8rem,7vw,5rem)] font-bold leading-[1.1] tracking-[-2px] mb-[1.5rem] text-white">
+                    Mountain <br>
+                    <span class="text-[#81e5ee]">Discovery</span>
+                </h1>
+                <p class="text-[#aaa] font-light max-w-[500px] leading-[1.8]">
+                    Exploring the world's most iconic peaks, from the jagged ridges of the Alps to the stratospheric summits of the Himalayas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="max-w-[1320px] mx-auto px-4 pb-12">
+        <p class="text-center text-[#666] uppercase tracking-[4px] text-[0.75rem] mb-[40px]">Featured Expeditions</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            
+            <div class="h-full">
+                <div class="bg-[rgba(255,255,255,0.03)] backdrop-blur-[15px] border border-[rgba(255,255,255,0.08)] overflow-hidden transition-all duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] h-full flex flex-col hover:-translate-y-[15px] hover:bg-[rgba(255,255,255,0.05)] hover:shadow-[0_40px_80px_rgba(0,0,0,0.8)] group">
+                    <div class="overflow-hidden h-[280px]">
+                        <img src="https://plus.unsplash.com/premium_photo-1690464636061-88eb066e7e64?w=800" class="w-full h-full object-cover saturate-[0.7] brightness-[0.8] transition-all duration-[1200ms] ease-in-out group-hover:scale-110 group-hover:saturate-[1.1] group-hover:brightness-100" alt="Matterhorn" loading="lazy">
+                    </div>
+                    <div class="p-[2.5rem] flex flex-col flex-grow">
+                        <h5 class="font-serif text-[1.6rem] mb-[20px] text-white">The Matterhorn</h5>
+                        <p class="text-[0.95rem] leading-[1.8] text-[#999] mb-[30px] flex-grow font-light">Located on the border between Switzerland and Italy, its near-perfect pyramidal peak remains a symbol of alpine climbing.</p>
+                        <a href="#" class="self-start bg-transparent text-white border border-[rgba(255,255,255,0.15)] px-[30px] py-[12px] text-[0.7rem] font-semibold uppercase tracking-[3px] transition-all duration-400 ease-in-out no-underline rounded-[50px] backdrop-blur-[5px] hover:bg-white hover:text-black hover:border-white inline-block max-sm:px-[16px] max-sm:py-[8px] max-sm:text-[0.6rem]">Explore Peak</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-full">
+                <div class="bg-[rgba(255,255,255,0.03)] backdrop-blur-[15px] border border-[rgba(255,255,255,0.08)] overflow-hidden transition-all duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] h-full flex flex-col hover:-translate-y-[15px] hover:bg-[rgba(255,255,255,0.05)] hover:shadow-[0_40px_80px_rgba(0,0,0,0.8)] group">
+                    <div class="overflow-hidden h-[280px]">
+                        <img src="https://images.unsplash.com/photo-1597666864156-2e7ae49fca5a?q=80&w=800" class="w-full h-full object-cover saturate-[0.7] brightness-[0.8] transition-all duration-[1200ms] ease-in-out group-hover:scale-110 group-hover:saturate-[1.1] group-hover:brightness-100" alt="Mount Everest" loading="lazy">
+                    </div>
+                    <div class="p-[2.5rem] flex flex-col flex-grow">
+                        <h5 class="font-serif text-[1.6rem] mb-[20px] text-white">Mount Everest</h5>
+                        <p class="text-[0.95rem] leading-[1.8] text-[#999] mb-[30px] flex-grow font-light">Standing at 8,848 meters, the roof of the world offers the ultimate challenge to human endurance and spirit.</p>
+                        <a href="#" class="self-start bg-transparent text-white border border-[rgba(255,255,255,0.15)] px-[30px] py-[12px] text-[0.7rem] font-semibold uppercase tracking-[3px] transition-all duration-400 ease-in-out no-underline rounded-[50px] backdrop-blur-[5px] hover:bg-white hover:text-black hover:border-white inline-block max-sm:px-[16px] max-sm:py-[8px] max-sm:text-[0.6rem]">Explore Peak</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-full">
+                <div class="bg-[rgba(255,255,255,0.03)] backdrop-blur-[15px] border border-[rgba(255,255,255,0.08)] overflow-hidden transition-all duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] h-full flex flex-col hover:-translate-y-[15px] hover:bg-[rgba(255,255,255,0.05)] hover:shadow-[0_40px_80px_rgba(0,0,0,0.8)] group">
+                    <div class="overflow-hidden h-[280px]">
+                        <img src="https://images.unsplash.com/photo-1578271887552-5ac3a72752bc?w=800" class="w-full h-full object-cover saturate-[0.7] brightness-[0.8] transition-all duration-[1200ms] ease-in-out group-hover:scale-110 group-hover:saturate-[1.1] group-hover:brightness-100" alt="Mount Fuji" loading="lazy">
+                    </div>
+                    <div class="p-[2.5rem] flex flex-col flex-grow">
+                        <h5 class="font-serif text-[1.6rem] mb-[20px] text-white">Mount Fuji</h5>
+                        <p class="text-[0.95rem] leading-[1.8] text-[#999] mb-[30px] flex-grow font-light">An active stratovolcano and a sacred symbol of Japan, renowned for its iconic peak and symmetrical cone.</p>
+                        <a href="#" class="self-start bg-transparent text-white border border-[rgba(255,255,255,0.15)] px-[30px] py-[12px] text-[0.7rem] font-semibold uppercase tracking-[3px] transition-all duration-400 ease-in-out no-underline rounded-[50px] backdrop-blur-[5px] hover:bg-white hover:text-black hover:border-white inline-block max-sm:px-[16px] max-sm:py-[8px] max-sm:text-[0.6rem]">Explore Peak</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <section class="max-w-[1320px] mx-auto px-4 pb-12 mb-12">
+        <p class="text-center text-[#666] uppercase tracking-[4px] text-[0.75rem] mb-[40px]">Peaks of the Month</p>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            
+            <div>
+                <div class="bg-[linear-gradient(145deg,rgba(255,255,255,0.03)_0%,rgba(10,11,12,0.95)_100%)] border border-[rgba(231,248,255,0.15)] shadow-[0_20px_40px_-10px_rgba(0,0,0,0.5)] flex flex-row h-full min-h-[280px] relative overflow-hidden rounded-[24px] transition-all duration-400 ease-in-out hover:border-[rgba(182,204,206,0.4)] hover:shadow-[0_0_30px_rgba(165,243,252,0.1)] hover:-translate-y-[5px] group">
+                    <div class="flex-none w-[40%] max-sm:w-[35%] relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544198365-f5d60b6d8190?q=80&w=600" alt="Aconcagua" class="w-full h-full object-cover grayscale-[20%] brightness-[0.85] transition-all duration-[1500ms] ease-in-out group-hover:scale-[1.05] group-hover:grayscale-0 group-hover:brightness-100">
+                        <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(10,11,12,0),rgba(10,11,12,0.6))]"></div>
+                    </div>
+                    <div class="flex-1 p-[1.8rem] max-sm:p-4 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[0.85rem] max-sm:text-[0.6rem] tracking-[6px] uppercase text-[#c1dfe2] font-semibold mb-[0.5rem] block">South America</span>
+                            <div class="w-[30px] h-[2px] bg-[#c1dfe2] mb-[10px] transition-[width] duration-500 ease-in-out group-hover:w-[60px]"></div>
+                            <h2 class="font-serif text-[1.8rem] max-sm:text-[1.4rem] my-[10px] leading-[1.1] bg-[linear-gradient(135deg,#ffffff_30%,#c1dfe2_100%)] bg-clip-text text-transparent pb-[0.2em]">Aconcagua</h2>
+                            <p class="text-[0.85rem] max-sm:text-[0.8rem] text-[#aaa] leading-[1.6] mb-4 line-clamp-3 max-sm:line-clamp-2">Known as the "Stone Sentinel," it is the highest mountain outside of Asia. Offers a majestic yet brutal ascent.</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-[15px] mt-auto pt-[15px] border-t border-[rgba(188,229,247,0.1)]">
+                            <div>
+                                <span class="block text-[0.6rem] uppercase tracking-[1px] text-[#c1dfe2] opacity-80 mb-[2px]">Elevation</span>
+                                <span class="font-serif text-[1.1rem] text-white">6,961m</span>
+                            </div>
+                            <div class="text-right">
+                                <a href="#" class="self-start bg-transparent text-white border border-[rgba(255,255,255,0.15)] px-[15px] py-[6px] text-[0.6rem] font-semibold uppercase tracking-[3px] transition-all duration-400 ease-in-out no-underline rounded-[50px] backdrop-blur-[5px] hover:bg-white hover:text-black hover:border-white inline-block max-sm:px-[16px] max-sm:py-[8px]">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="bg-[linear-gradient(145deg,rgba(255,255,255,0.03)_0%,rgba(10,11,12,0.95)_100%)] border border-[rgba(231,248,255,0.15)] shadow-[0_20px_40px_-10px_rgba(0,0,0,0.5)] flex flex-row h-full min-h-[280px] relative overflow-hidden rounded-[24px] transition-all duration-400 ease-in-out hover:border-[rgba(182,204,206,0.4)] hover:shadow-[0_0_30px_rgba(165,243,252,0.1)] hover:-translate-y-[5px] group">
+                    <div class="flex-none w-[40%] max-sm:w-[35%] relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1625097800255-aa20cb294ddc?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Denali" class="w-full h-full object-cover grayscale-[20%] brightness-[0.85] transition-all duration-[1500ms] ease-in-out group-hover:scale-[1.05] group-hover:grayscale-0 group-hover:brightness-100">
+                        <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(10,11,12,0),rgba(10,11,12,0.6))]"></div>
+                    </div>
+                    <div class="flex-1 p-[1.8rem] max-sm:p-4 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[0.85rem] max-sm:text-[0.6rem] tracking-[6px] uppercase text-[#c1dfe2] font-semibold mb-[0.5rem] block">North America</span>
+                            <div class="w-[30px] h-[2px] bg-[#c1dfe2] mb-[10px] transition-[width] duration-500 ease-in-out group-hover:w-[60px]"></div>
+                            <h2 class="font-serif text-[1.8rem] max-sm:text-[1.4rem] my-[10px] leading-[1.1] bg-[linear-gradient(135deg,#ffffff_30%,#c1dfe2_100%)] bg-clip-text text-transparent pb-[0.2em]">Denali</h2>
+                            <p class="text-[0.85rem] max-sm:text-[0.8rem] text-[#aaa] leading-[1.6] mb-4 line-clamp-3 max-sm:line-clamp-2">North America’s highest peak, towering over the Alaska Range with extreme cold and unforgiving weather.</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-[15px] mt-auto pt-[15px] border-t border-[rgba(188,229,247,0.1)]">
+                            <div>
+                                <span class="block text-[0.6rem] uppercase tracking-[1px] text-[#c1dfe2] opacity-80 mb-[2px]">Elevation</span>
+                                <span class="font-serif text-[1.1rem] text-white">6,190m</span>
+                            </div>
+                            <div class="text-right">
+                                <a href="#" class="self-start bg-transparent text-white border border-[rgba(255,255,255,0.15)] px-[15px] py-[6px] text-[0.6rem] font-semibold uppercase tracking-[3px] transition-all duration-400 ease-in-out no-underline rounded-[50px] backdrop-blur-[5px] hover:bg-white hover:text-black hover:border-white inline-block max-sm:px-[16px] max-sm:py-[8px]">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="bg-[linear-gradient(145deg,rgba(255,255,255,0.03)_0%,rgba(10,11,12,0.95)_100%)] border border-[rgba(231,248,255,0.15)] shadow-[0_20px_40px_-10px_rgba(0,0,0,0.5)] flex flex-row h-full min-h-[280px] relative overflow-hidden rounded-[24px] transition-all duration-400 ease-in-out hover:border-[rgba(182,204,206,0.4)] hover:shadow-[0_0_30px_rgba(165,243,252,0.1)] hover:-translate-y-[5px] group">
+                    <div class="flex-none w-[40%] max-sm:w-[35%] relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1626507482546-8c7f61c57edc?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kilimanjaro" class="w-full h-full object-cover grayscale-[20%] brightness-[0.85] transition-all duration-[1500ms] ease-in-out group-hover:scale-[1.05] group-hover:grayscale-0 group-hover:brightness-100">
+                        <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(10,11,12,0),rgba(10,11,12,0.6))]"></div>
+                    </div>
+                    <div class="flex-1 p-[1.8rem] max-sm:p-4 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[0.85rem] max-sm:text-[0.6rem] tracking-[6px] uppercase text-[#c1dfe2] font-semibold mb-[0.5rem] block">Africa</span>
+                            <div class="w-[30px] h-[2px] bg-[#c1dfe2] mb-[10px] transition-[width] duration-500 ease-in-out group-hover:w-[60px]"></div>
+                            <h2 class="font-serif text-[1.8rem] max-sm:text-[1.4rem] my-[10px] leading-[1.1] bg-[linear-gradient(135deg,#ffffff_30%,#c1dfe2_100%)] bg-clip-text text-transparent pb-[0.2em]">Kilimanjaro</h2>
+                            <p class="text-[0.85rem] max-sm:text-[0.8rem] text-[#aaa] leading-[1.6] mb-4 line-clamp-3 max-sm:line-clamp-2">A dormant volcano in Tanzania. It is the highest single free-standing mountain in the world, rising from savannah to snow.</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-[15px] mt-auto pt-[15px] border-t border-[rgba(188,229,247,0.1)]">
+                            <div>
+                                <span class="block text-[0.6rem] uppercase tracking-[1px] text-[#c1dfe2] opacity-80 mb-[2px]">Elevation</span>
+                                <span class="font-serif text-[1.1rem] text-white">5,895m</span>
+                            </div>
+                            <div class="text-right">
+                                <a href="#" class="self-start bg-transparent text-white border border-[rgba(255,255,255,0.15)] px-[15px] py-[6px] text-[0.6rem] font-semibold uppercase tracking-[3px] transition-all duration-400 ease-in-out no-underline rounded-[50px] backdrop-blur-[5px] hover:bg-white hover:text-black hover:border-white inline-block max-sm:px-[16px] max-sm:py-[8px]">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="bg-[linear-gradient(145deg,rgba(255,255,255,0.03)_0%,rgba(10,11,12,0.95)_100%)] border border-[rgba(231,248,255,0.15)] shadow-[0_20px_40px_-10px_rgba(0,0,0,0.5)] flex flex-row h-full min-h-[280px] relative overflow-hidden rounded-[24px] transition-all duration-400 ease-in-out hover:border-[rgba(182,204,206,0.4)] hover:shadow-[0_0_30px_rgba(165,243,252,0.1)] hover:-translate-y-[5px] group">
+                    <div class="flex-none w-[40%] max-sm:w-[35%] relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1627414363144-8982a29a0922?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mount Elbrus" class="w-full h-full object-cover grayscale-[20%] brightness-[0.85] transition-all duration-[1500ms] ease-in-out group-hover:scale-[1.05] group-hover:grayscale-0 group-hover:brightness-100">
+                        <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(10,11,12,0),rgba(10,11,12,0.6))]"></div>
+                    </div>
+                    <div class="flex-1 p-[1.8rem] max-sm:p-4 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[0.85rem] max-sm:text-[0.6rem] tracking-[6px] uppercase text-[#c1dfe2] font-semibold mb-[0.5rem] block">Europe</span>
+                            <div class="w-[30px] h-[2px] bg-[#c1dfe2] mb-[10px] transition-[width] duration-500 ease-in-out group-hover:w-[60px]"></div>
+                            <h2 class="font-serif text-[1.8rem] max-sm:text-[1.4rem] my-[10px] leading-[1.1] bg-[linear-gradient(135deg,#ffffff_30%,#c1dfe2_100%)] bg-clip-text text-transparent pb-[0.2em]">Mount Elbrus</h2>
+                            <p class="text-[0.85rem] max-sm:text-[0.8rem] text-[#aaa] leading-[1.6] mb-4 line-clamp-3 max-sm:line-clamp-2">Europe’s highest peak, an imposing dormant volcano in the Caucasus, known for its icy slopes and unpredictable weather.</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-[15px] mt-auto pt-[15px] border-t border-[rgba(188,229,247,0.1)]">
+                            <div>
+                                <span class="block text-[0.6rem] uppercase tracking-[1px] text-[#c1dfe2] opacity-80 mb-[2px]">Elevation</span>
+                                <span class="font-serif text-[1.1rem] text-white">5,642m</span>
+                            </div>
+                            <div class="text-right">
+                                <a href="#" class="self-start bg-transparent text-white border border-[rgba(255,255,255,0.15)] px-[15px] py-[6px] text-[0.6rem] font-semibold uppercase tracking-[3px] transition-all duration-400 ease-in-out no-underline rounded-[50px] backdrop-blur-[5px] hover:bg-white hover:text-black hover:border-white inline-block max-sm:px-[16px] max-sm:py-[8px]">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
